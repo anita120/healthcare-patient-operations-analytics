@@ -1,0 +1,50 @@
+table_name,column_name,data_type,description
+patients,patient_id,VARCHAR(10),Unique patient identifier
+patients,patient_name,VARCHAR(100),Synthetic patient name
+patients,age,INTEGER,Patient age in years
+patients,gender,VARCHAR(20),Patient gender
+patients,city,VARCHAR(50),Patient city
+patients,insurance_type,VARCHAR(30),Insurance/payment coverage category
+patients,registration_date,DATE,Patient registration date
+patients,age_group,VARCHAR(10),Age band
+departments,department_id,VARCHAR(10),Unique department identifier
+departments,department_name,VARCHAR(100),Department name
+departments,location,VARCHAR(50),Facility location
+departments,specialty,VARCHAR(100),Clinical specialty
+providers,provider_id,VARCHAR(10),Unique provider identifier
+providers,provider_name,VARCHAR(100),Synthetic provider name
+providers,department_id,VARCHAR(10),Provider department
+providers,experience_years,INTEGER,Experience in years
+providers,provider_type,VARCHAR(30),Consultant or Specialist
+appointments,appointment_id,VARCHAR(12),Unique appointment identifier
+appointments,patient_id,VARCHAR(10),Patient
+appointments,provider_id,VARCHAR(10),Provider
+appointments,department_id,VARCHAR(10),Department
+appointments,appointment_date,DATE,Scheduled date
+appointments,appointment_time,TIME,Scheduled time
+appointments,appointment_status,VARCHAR(20),"Completed, No Show, or Cancelled"
+appointments,appointment_type,VARCHAR(40),Appointment type
+appointments,booking_channel,VARCHAR(30),Booking channel
+appointments,scheduled_days_ahead,INTEGER,Booking lead time in days
+visits,visit_id,VARCHAR(12),Unique visit identifier
+visits,appointment_id,VARCHAR(12),Completed appointment
+visits,patient_id,VARCHAR(10),Patient
+visits,provider_id,VARCHAR(10),Provider
+visits,department_id,VARCHAR(10),Department
+visits,visit_date,DATE,Visit date
+visits,check_in_time,TIMESTAMP,Check-in timestamp
+visits,consultation_start_time,TIMESTAMP,Consultation start
+visits,consultation_end_time,TIMESTAMP,Consultation end
+visits,visit_type,VARCHAR(30),"New, Follow-up, or Emergency"
+visits,diagnosis_category,VARCHAR(50),Broad synthetic diagnosis category
+billing,bill_id,VARCHAR(12),Unique bill identifier
+billing,visit_id,VARCHAR(12),Visit
+billing,patient_id,VARCHAR(10),Patient
+billing,department_id,VARCHAR(10),Department
+billing,bill_date,DATE,Billing date
+billing,consultation_fee,"NUMERIC(12,2)",Consultation fee
+billing,procedure_amount,"NUMERIC(12,2)",Procedure charges
+billing,medication_amount,"NUMERIC(12,2)",Medication charges
+billing,total_amount,"NUMERIC(12,2)",Total billed amount
+billing,payment_method,VARCHAR(30),Payment method
+billing,payment_status,VARCHAR(20),Paid or Pending

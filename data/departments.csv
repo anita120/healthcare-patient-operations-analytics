@@ -1,0 +1,11 @@
+department_id,department_name,location,specialty
+D001,Cardiology,Bengaluru,Cardiology
+D002,Orthopedics,Mumbai,Orthopedics
+D003,Dermatology,Delhi,Dermatology
+D004,Pediatrics,Hyderabad,Pediatrics
+D005,Neurology,Chennai,Neurology
+D006,General Medicine,Pune,General Medicine
+D007,Gynecology,Kolkata,Gynecology
+D008,ENT,Ahmedabad,ENT
+D009,Ophthalmology,Jaipur,Ophthalmology
+D010,General Surgery,Bhubaneswar,General Surgery
